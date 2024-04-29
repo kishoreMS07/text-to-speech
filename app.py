@@ -5,7 +5,7 @@ import os
 
 
 def text_to_speech(text):
-    tts = gTTS(text=text, lang="en", tld="co.in")
+    gtts = gTTS(text=text, lang="en", tld="co.in")
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         temp_file_name = temp_file.name
     tts.save(temp_file_name)
