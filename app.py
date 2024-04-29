@@ -1,5 +1,8 @@
+import streamlit as st
+import tempfile
+import os
 
-
+!pip install gtts
 
 def text_to_speech(text):
     gtts = gTTS(text=text, lang="en", tld="co.in")
